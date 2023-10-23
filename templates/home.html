@@ -16,7 +16,7 @@
 </head>
 <body>
   <div class=".container" >
- <h1 class="text-center mt-4 mb-4">Carrer private limited</h1>
+ <h1 class="text-center mt-4 mb-4"> Carrer Private Limited </h1>
   <img class="img-fluid" id="banner" src="/static/banner.jpg" >
   <h2 class="text-center mt-2 mb-4">About us</h2>
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed blandit libero volutpat sed cras. Mauris pharetra et ultrices neque ornare aenean euismod. Feugiat vivamus at augue eget arcu dictum varius. Augue eget arcu dictum varius duis at consectetur. Augue eget arcu dictum varius duis at consectetur lorem. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Non sodales neque sodales ut. Quis imperdiet massa tincidunt nunc.
@@ -24,7 +24,11 @@
 <p class="lead">Nullam vehicula ipsum a arcu. Sapien pellentesque habitant morbi tristique senectus et netus. Metus vulputate eu scelerisque felis imperdiet. A condimentum vitae sapien pellentesque. Amet porttitor eget dolor morbi non arcu risus quis. Tellus at urna condimentum mattis pellentesque id nibh. Ut porttitor leo a diam sollicitudin. Habitant morbi tristique senectus et netus et. Lectus sit amet est placerat. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Arcu ac tortor dignissim convallis aenean et tortor. Tortor pretium viverra suspendisse potenti nullam. Tellus cras adipiscing enim eu turpis. Vulputate dignissim suspendisse in est ante in nibh mauris. Magna etiam tempor orci eu lobortis elementum nibh tellus.
 </p>
   <h2 class="text-center mt-2 mb-4">Opening positions</h2>
-  <p>TODO--Show the jobs here</p>
+   <div> 
+     {% for job in jobs %}
+      {% include 'jobItem.html'%}
+     {% endfor %}
+   </div>
     <div class="text-center">
   <button clsss="btn btn-primary btn-lg" >Contact us</button>
   <p class= "mt-4">Copyright 2022,Sudhanshu</p>
